@@ -110,7 +110,7 @@ view: real_time_summary {
   }
 
   measure: boss_shipment_to_return {
-    type: number
+    type: sum
     sql: ${TABLE}.BOSS_Shipments_to_be_Returned ;;
     drill_fields: [location.Division,location.Region,location.District,location.Store,boss_shipment_to_return]
   }
